@@ -2,7 +2,9 @@
 let map = L.map('map').setView([ -0.0723876953125,36.056884765625], 12);
 
 // add a tilelayer: provide the url and the attribution
-L.tileLayer()
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+}).addTo(map);
 
 // Create a marker: provide a center, popup
 let marker = L.marker([-0.2345,37.668]).bindPopup('Home').addTo(map);
