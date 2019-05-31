@@ -9,17 +9,19 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 // Return a color depending on the area
 function getColorByArea(area){
 	
-  if(area<440018460.486){
+  if(area < 440018460.486){
     return '#d7191c';
   }
   else if (area< 739771562.215) {
     return '#fdae61';
 
-  }else if(area< 1039524663.943) {
+  }else if(area < 1039524663.943) {
     return '#ffffbf';
-  }else if(area< 1339277765.672) {
+
+  }else if(area < 1339277765.672) {
     return '#abdda4';
-  }else{
+    
+  }else {
   	return '#2ca25f';
   }
 

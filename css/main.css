@@ -4,13 +4,17 @@
 	width: 100%;
 }
 
-.legend{
-	width: auto;
-	height: auto;
-	padding:3px;
-	background: white;
-}
 
-.legend i{
-	width:100px;
-}
+  .legend
+    {
+      background:white;
+      line-height:1.5em;
+      padding: 3%;
+    }
+
+ .legend i
+    {
+      width:5em;
+      float:left;
+      
+    }
